@@ -28,7 +28,7 @@
             android:value="@string/google_app_id" />
 
         <activity
-            android:name=".view.SplashActivity"
+            android:name=".ViewModel.SplashActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -45,7 +45,7 @@
         <activity android:name=".ViewModel.MapActivity" />
         <activity android:name=".ViewModel.MainScreen"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".ViewModel.ChatbotScreen"
+        <activity android:name=".ViewModel.SensorScreen"
             android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".ViewModel.AlertScreen" />
     </application>

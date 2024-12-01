@@ -1,4 +1,4 @@
-package com.example.tarpuy.view
+package com.example.tarpuy.ViewModel
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,6 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tarpuy.R
-import com.example.tarpuy.ViewModel.InicioActivity
 
 class SplashActivity : AppCompatActivity() {
 

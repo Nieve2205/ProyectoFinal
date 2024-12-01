@@ -120,7 +120,7 @@ class MainScreen : AppCompatActivity() {
                     true
                 }
                 R.id.navigation_chatbot -> {
-                    startActivity(Intent(this, ChatbotScreen::class.java))
+                    startActivity(Intent(this, SensorScreen::class.java))
                     finish()
                     true
                 }
@@ -369,7 +369,7 @@ class MainScreen : AppCompatActivity() {
         }
     }
 
-    public fun getWeatherIcon(weatherMain: String): Int {
+    fun getWeatherIcon(weatherMain: String): Int {
         return when (weatherMain) {
             "Clear" -> R.drawable.ic_clear_sky
             "Clouds" -> R.drawable.ic_cloudy

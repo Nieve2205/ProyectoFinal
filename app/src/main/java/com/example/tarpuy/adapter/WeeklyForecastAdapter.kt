@@ -11,25 +11,30 @@ import android.view.Gravity
 import com.example.tarpuy.R
 import com.example.tarpuy.model.WeeklyForecastItem
 
+// Adaptador para mostrar pronósticos semanales en un RecyclerView, con celdas en una tabla.
 class WeeklyForecastAdapter(private val weeklyForecasts: List<WeeklyForecastItem>) :
     RecyclerView.Adapter<WeeklyForecastAdapter.WeeklyForecastViewHolder>() {
 
+    // ViewHolder que contiene un GridLayout para mostrar los datos del pronóstico semanal.
     class WeeklyForecastViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val gridLayout: GridLayout = itemView.findViewById(R.id.gridLayout)
     }
 
+    // Infla el layout del ítem y crea el ViewHolder.
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WeeklyForecastViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_weekly_forecast, parent, false)
         return WeeklyForecastViewHolder(view)
     }
 
+    // Enlaza los datos de pronóstico semanal al GridLayout.
     override fun onBindViewHolder(holder: WeeklyForecastViewHolder, position: Int) {
         val forecast = weeklyForecasts[position]
 
-        // Asignar los valores a las celdas de la tabla
-        holder.gridLayout.removeAllViews() // Limpiar celdas anteriores
+        // Limpiar celdas anteriores del GridLayout.
+        holder.gridLayout.removeAllViews()
 
+        // Crear y agregar celdas de texto con los datos del pronóstico diario.
         holder.gridLayout.addView(createTextView(forecast.day, holder.itemView.context))
         holder.gridLayout.addView(createTextView(forecast.morningTemp, holder.itemView.context))
         holder.gridLayout.addView(createTextView(forecast.afternoonTemp, holder.itemView.context))
@@ -37,6 +42,7 @@ class WeeklyForecastAdapter(private val weeklyForecasts: List<WeeklyForecastItem
         holder.gridLayout.addView(createTextView(forecast.nightTemp, holder.itemView.context))
     }
 
+    // Crea un TextView con los parámetros adecuados para cada celda del GridLayout.
     private fun createTextView(text: String, context: Context): TextView {
         return TextView(context).apply {
             layoutParams = GridLayout.LayoutParams().apply {
@@ -50,5 +56,6 @@ class WeeklyForecastAdapter(private val weeklyForecasts: List<WeeklyForecastItem
         }
     }
 
+    // Devuelve el número total de ítems (pronósticos semanales).
     override fun getItemCount(): Int = weeklyForecasts.size
 }

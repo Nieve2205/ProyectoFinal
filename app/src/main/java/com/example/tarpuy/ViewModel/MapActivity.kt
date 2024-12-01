@@ -181,7 +181,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
 
-
     private fun fetchWeather(city: String) {
         // Aquí se define la URL de la API del clima
         val apiKey = "TU_API_KEY" // Reemplaza con tu clave API

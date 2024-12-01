@@ -32,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
         val confirmPasswordEditText = findViewById<EditText>(R.id.confirmPasswordEditText)
         val registerButton = findViewById<Button>(R.id.registerButton)
 
-        // Configurar el botón de registro
+        // Configura el listener para el botón de registro
         registerButton.setOnClickListener {
             val fullName = fullNameEditText.text.toString().trim()
             val username = usernameEditText.text.toString().trim()
@@ -56,6 +56,7 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            // Validación de la contraseña (mínimo 8 caracteres, mayúsculas, minúsculas, números, caracteres especiales)
             if (password.length < 8 || !password.matches(Regex(".*[A-Z].*")) ||
                 !password.matches(Regex(".*[a-z].*")) || !password.matches(Regex(".*\\d.*")) ||
                 !password.matches(Regex(".*[!@#\$%^&*(),.?\":{}|<>].*"))
@@ -73,7 +74,7 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Validar si el nombre de usuario ya existe
+            // Validar si el nombre de usuario ya está registrado
             firestore.collection("users").whereEqualTo("username", username).get()
                 .addOnSuccessListener { documents ->
                     if (!documents.isEmpty) {
@@ -95,7 +96,7 @@ class RegisterActivity : AppCompatActivity() {
                                                 val intent = Intent(this, MapActivity::class.java)
                                                 intent.putExtra("username", username)
                                                 startActivity(intent)
-                                                finish()
+                                                finish()  // Cierra la actividad actual para evitar que el usuario regrese
                                             }
                                             .addOnFailureListener { e ->
                                                 Toast.makeText(this, "Error al guardar el usuario: ${e.message}", Toast.LENGTH_SHORT).show()
