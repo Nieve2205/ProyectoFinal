@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners
+        android:radius="16dp"/> <!-- Cambia el valor para ajustar el redondeo -->
+
+    <solid
+        android:color="#8BC34A"/> <!-- Cambia por el color que desees -->
+
+    <padding
+        android:left="12dp"
+        android:top="8dp"
+        android:right="12dp"
+        android:bottom="8dp"/> <!-- Ajusta el padding según sea necesario -->
+</shape>

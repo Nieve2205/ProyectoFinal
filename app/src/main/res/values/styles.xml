@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSearchView">
+        <item name="android:queryHint">Ingresa tu ubicación</item>
+        <item name="android:textColorHint">#FF0000</item> <!-- Cambia el color del hint a rojo -->
+    </style>
+</resources>

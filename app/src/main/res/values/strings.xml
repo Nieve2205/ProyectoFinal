@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tarpuy</string>
+    <string name="logo_description">Logo de la aplicación Tarpuy</string>
+    <string name="morning_weather_icon">Ícono de clima por la mañana</string>
+    <string name="afternoon_weather_icon">Ícono de clima por la tarde</string>
+    <string name="evening_weather_icon">Ícono de clima al anochecer</string>
+    <string name="night_weather_icon">Ícono de clima por la noche</string>
+</resources>

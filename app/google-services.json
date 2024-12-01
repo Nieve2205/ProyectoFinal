@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332751767534",
+    "project_id": "tarpuyapp-dc95d",
+    "storage_bucket": "tarpuyapp-dc95d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332751767534:android:1d69c580c45dc6aeb770ff",
+        "android_client_info": {
+          "package_name": "com.example.tarpuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8RPWr7Y-z-bM_U9XiHOM0Dxk21Lsej2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

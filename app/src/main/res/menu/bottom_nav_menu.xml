@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_alert"
+        android:icon="@drawable/ic_alerta"
+        android:title="Alertas" />
+
+    <item
+        android:id="@+id/navigation_clima"
+        android:icon="@drawable/ic_clima"
+        android:title="Clima" />
+
+    <item
+        android:id="@+id/navigation_chatbot"
+        android:icon="@drawable/ic_chatbot"
+        android:title="Ayuda" />
+</menu>
