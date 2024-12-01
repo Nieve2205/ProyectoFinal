@@ -26,7 +26,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="20dp"
                 android:contentDescription="Menu Icon"
-                android:src="@drawable/ic_chatbot" />
+                android:src="@drawable/ic_sensor" />
 
             <TextView
                 android:id="@+id/toolbar_title"
@@ -34,56 +34,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="30dp"
-                android:text="Asistente de ayuda"
+                android:text="Datos del sensor"
                 android:textColor="@android:color/black"
                 android:textSize="20sp" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <!-- Contenido principal -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:layout_marginBottom="56dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!-- RecyclerView para mostrar los mensajes -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/chatRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="8dp" />
-
-    <!-- Contenedor para enviar mensajes -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <!-- Campo de entrada de texto -->
-        <EditText
-            android:id="@+id/inputMessage"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="Escribe tu mensaje"
-            android:padding="8dp"
-            android:background="@android:drawable/edit_text" />
-
-        <!-- Botón para enviar -->
-        <ImageButton
-            android:id="@+id/sendButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Enviar"
-            android:src="@android:drawable/ic_menu_send"
-            tools:ignore="TouchTargetSizeCheck" />
-    </LinearLayout>
-</LinearLayout>
 
     <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
