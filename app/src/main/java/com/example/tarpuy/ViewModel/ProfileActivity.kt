@@ -40,13 +40,13 @@ class ProfileActivity : AppCompatActivity() {
         firestore = FirebaseFirestore.getInstance()
 
         // Referencias a los TextViews
-        usernameTextView = findViewById(R.id.usernameText)
-        fullNameTextView = findViewById(R.id.fullNameText)
-        emailTextView = findViewById(R.id.emailText)
-        phoneNumberTextView = findViewById(R.id.phoneNumberText)
-        dateOfBirthTextView = findViewById(R.id.dateOfBirthText)
-        cityTextView = findViewById(R.id.cityText)
-        genderTextView = findViewById(R.id.genderText)
+        usernameTextView = findViewById(R.id.usernameTextView)
+        fullNameTextView = findViewById(R.id.fullNameTextView)
+        emailTextView = findViewById(R.id.emailTextView)
+        phoneNumberTextView = findViewById(R.id.phoneNumberTextView)
+        dateOfBirthTextView = findViewById(R.id.dateOfBirthTextView)
+        cityTextView = findViewById(R.id.cityTextView)
+        genderTextView = findViewById(R.id.genderTextView)
         editIcon = findViewById(R.id.edit_icon) //icono de lápiz
 
         // Cargar datos del usuario

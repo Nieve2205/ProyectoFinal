@@ -70,7 +70,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/usernameText"
+        android:id="@+id/usernameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -91,7 +91,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/fullNameText"
+        android:id="@+id/fullNameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -112,7 +112,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/emailText"
+        android:id="@+id/emailTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -133,7 +133,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/phoneNumberText"
+        android:id="@+id/phoneNumberTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -154,7 +154,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/dateOfBirthText"
+        android:id="@+id/dateOfBirthTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#E2F4E2"
@@ -175,7 +175,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/cityText"
+        android:id="@+id/cityTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
@@ -196,7 +196,7 @@
         android:paddingBottom="4dp"/>
 
     <TextView
-        android:id="@+id/genderText"
+        android:id="@+id/genderTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
