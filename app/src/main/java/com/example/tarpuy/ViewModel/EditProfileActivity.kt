@@ -54,6 +54,13 @@ class EditProfileActivity : AppCompatActivity() {
         cityEditText.setText(intent.getStringExtra("city"))
         genderEditText.setText(intent.getStringExtra("gender"))
 
+        // Listener para el icono de flecha (back)
+        backIcon.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         // Guardar cambios
         saveChangesButton.setOnClickListener {
             val updatedUser = hashMapOf(
@@ -79,12 +86,6 @@ class EditProfileActivity : AppCompatActivity() {
                     }
             }
 
-            // Listener para el icono de flecha
-            backIcon.setOnClickListener {
-                val intent = Intent(this, ProfileActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
         }
     }
 }
