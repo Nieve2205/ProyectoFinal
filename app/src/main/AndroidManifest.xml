@@ -47,7 +47,6 @@
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ViewModel.SensorScreen"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".ViewModel.AlertScreen" />
     </application>
 </manifest>
