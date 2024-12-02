@@ -69,6 +69,13 @@ class MainScreen : AppCompatActivity() {
             }
         }
 
+        //icono de user
+        val menuIcon: ImageView = findViewById(R.id.menu_icon)
+        menuIcon.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
         initViews()
 
         setupSearchView()

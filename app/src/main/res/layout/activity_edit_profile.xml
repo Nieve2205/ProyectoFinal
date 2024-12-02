@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campos de EditText con sus respectivos nombres de campo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su usuario"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Completo"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su nombre completo"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo Electrónico"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su correo electrónico"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Número de Teléfono"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su número de teléfono"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/dateOfBirthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su fecha de nacimiento"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciudad"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su ciudad"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Género"
+        android:textColor="#000000"
+        android:paddingBottom="4dp"/>
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#81C784"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:hint="Ingrese su género"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Botón para Guardar Cambios -->
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2E7D32"
+        android:padding="12dp"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
