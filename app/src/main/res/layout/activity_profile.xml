@@ -42,7 +42,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
-        android:id="@+id/edit_icono"
+        android:id="@+id/edit_icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/edit"

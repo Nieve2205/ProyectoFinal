@@ -47,7 +47,7 @@ class ProfileActivity : AppCompatActivity() {
         dateOfBirthTextView = findViewById(R.id.dateOfBirthText)
         cityTextView = findViewById(R.id.cityText)
         genderTextView = findViewById(R.id.genderText)
-        editIcon = findViewById(R.id.edit_icono) //icono de lápiz
+        editIcon = findViewById(R.id.edit_icon) //icono de lápiz
 
         // Cargar datos del usuario
         val userId = auth.currentUser?.uid
