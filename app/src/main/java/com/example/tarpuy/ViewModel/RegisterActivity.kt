@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tarpuy.R
@@ -31,6 +32,10 @@ class RegisterActivity : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val confirmPasswordEditText = findViewById<EditText>(R.id.confirmPasswordEditText)
         val registerButton = findViewById<Button>(R.id.registerButton)
+
+        // TextView para mostrar requisitos de contraseña
+        val passwordRequirementsTextView = findViewById<TextView>(R.id.passwordRequirementsTextView)
+        passwordRequirementsTextView.text = "*La contraseña debe tener un mínimo de 8 caracteres, incluir al menos una letra mayúscula, un número y un símbolo especial.*"
 
         // Configura el listener para el botón de registro
         registerButton.setOnClickListener {
