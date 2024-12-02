@@ -34,7 +34,7 @@ class ChatbotActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_chatbot -> {
-                    startActivity(Intent(this, AlertScreen::class.java))
+                    startActivity(Intent(this, ChatbotActivity::class.java))
                     finish()
                     true
                 }
@@ -53,6 +53,8 @@ class ChatbotActivity : AppCompatActivity() {
         }
     }
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chatbot_screen)
@@ -60,6 +62,7 @@ class ChatbotActivity : AppCompatActivity() {
         chatRecyclerView = findViewById(R.id.chatRecyclerView)
         inputMessage = findViewById(R.id.inputMessage)
         sendButton = findViewById(R.id.sendButton)
+        bottomNavigationView = findViewById(R.id.bottom_navigation)
 
         chatRecyclerView.layoutManager = LinearLayoutManager(this)
         chatAdapter = ChatAdapter()
@@ -80,6 +83,8 @@ class ChatbotActivity : AppCompatActivity() {
             .build()
 
         apiService = retrofit.create(GeminiApiService::class.java) // Inicializa apiService aquí
+
+        setupBottomNavigation()
     }
 
     private fun sendMessage(message: String) {
