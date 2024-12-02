@@ -58,6 +58,15 @@
             android:inputType="textPassword"
             android:padding="12dp" />
 
+        <TextView
+            android:id="@+id/passwordRequirementsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+
+
         <EditText
             android:id="@+id/confirmPasswordEditText"
             android:layout_width="match_parent"
