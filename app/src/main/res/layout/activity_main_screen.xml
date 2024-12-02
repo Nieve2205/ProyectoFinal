@@ -26,10 +26,10 @@
 
             <ImageView
                 android:id="@+id/menu_icon"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="20dp"
-                android:src="@drawable/ic_menu"
+                android:src="@drawable/ic_perfil"
                 android:contentDescription="Menu Icon" />
 
             <TextView
