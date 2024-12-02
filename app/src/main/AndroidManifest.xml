@@ -19,7 +19,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAg6Q-ZyAYvmWvVUXE3EpbtgDqCMpaJSNo"/>
+            android:value="AIzaSyB5LOWuDMy6wox3DNYQCi4Dyd3uaaG_7o4"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -47,6 +47,6 @@
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ViewModel.SensorScreen"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".ViewModel.AlertScreen" />
+        <activity android:name=".ViewModel.ChatbotActivity" />
     </application>
 </manifest>

@@ -114,12 +114,12 @@ class MainScreen : AppCompatActivity() {
         bottomNavigationView.selectedItemId = R.id.navigation_clima
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.navigation_alert -> {
-                    startActivity(Intent(this, AlertScreen::class.java))
+                R.id.navigation_chatbot -> {
+                    startActivity(Intent(this, ChatbotActivity::class.java))
                     finish()
                     true
                 }
-                R.id.navigation_chatbot -> {
+                R.id.navigation_sensor -> {
                     startActivity(Intent(this, SensorScreen::class.java))
                     finish()
                     true
