@@ -51,5 +51,6 @@
         <activity android:name=".ViewModel.ChatbotActivity" />
         <activity android:name=".ViewModel.EditProfileActivity" />
         <activity android:name=".ViewModel.ProfileActivity" />
+        <activity android:name=".ViewModel.ForgotPasswordActivity" />
     </application>
 </manifest>
