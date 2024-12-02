@@ -3,136 +3,201 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#F5F5F5">
 
-    <!-- Campos de EditText con sus respectivos nombres de campo -->
-    <TextView
+    <!-- Barra Superior -->
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Usuario"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/usernameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su usuario"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre Completo"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/fullNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su nombre completo"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/flecha"
+            android:contentDescription="User Icon"
+            android:clickable="true" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Correo Electrónico"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su correo electrónico"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar Perfil"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
 
-    <TextView
+    <!-- Contenido Principal -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Número de Teléfono"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/phoneNumberEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su número de teléfono"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fecha de Nacimiento"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/dateOfBirthEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su fecha de nacimiento"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ciudad"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/cityEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su ciudad"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+            <!-- Campos de Texto -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuario"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81C784"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:hint="Ingrese su usuario"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Género"
-        android:textColor="#000000"
-        android:paddingBottom="4dp"/>
-    <EditText
-        android:id="@+id/genderEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#81C784"
-        android:textColor="#000000"
-        android:padding="10dp"
-        android:hint="Ingrese su género"
-        android:minHeight="48dp"
-        android:layout_marginBottom="10dp" />
+            <!-- Nombre Completo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Completo"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="4dp" />
+            <EditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81C784"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:hint="Ingrese su nombre completo"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
 
-    <!-- Botón para Guardar Cambios -->
-    <Button
-        android:id="@+id/saveChangesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Guardar Cambios"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#2E7D32"
-        android:padding="12dp"
-        android:layout_marginTop="24dp" />
+            <!-- Correo Electrónico -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Correo Electrónico"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81C784"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:hint="Ingrese su correo electrónico"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Número de Teléfono -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Teléfono"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:paddingBottom="4dp" />
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81C784"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:hint="Ingrese su número de teléfono"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Fecha de Nacimiento -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de Nacimiento"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+            <EditText
+                android:id="@+id/dateOfBirthEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81C784"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:hint="Ingrese su fecha de nacimiento"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Ciudad -->
+
+            <!-- Género -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="Ciudad"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/cityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#81C784"
+                android:hint="Ingrese su ciudad"
+                android:textSize="14sp"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Género"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:paddingBottom="4dp" />
+            <EditText
+                android:id="@+id/genderEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81C784"
+                android:textColor="#000000"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:hint="Ingrese su género"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Botón de Guardar Cambios -->
+            <Button
+                android:id="@+id/saveChangesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Cambios"
+                android:textColor="#212121"
+                android:background="@drawable/rounded_button"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
