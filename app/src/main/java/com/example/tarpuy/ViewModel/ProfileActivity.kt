@@ -25,6 +25,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var cityTextView: TextView
     private lateinit var genderTextView: TextView
     private lateinit var editIcon: ImageView // Icono de lápiz
+    private lateinit var backIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +49,7 @@ class ProfileActivity : AppCompatActivity() {
         cityTextView = findViewById(R.id.cityTextView)
         genderTextView = findViewById(R.id.genderTextView)
         editIcon = findViewById(R.id.edit_icon) //icono de lápiz
+        backIcon = findViewById(R.id.back_icon) // icono de flecha
 
         // Cargar datos del usuario
         val userId = auth.currentUser?.uid
@@ -81,6 +83,13 @@ class ProfileActivity : AppCompatActivity() {
             intent.putExtra("city", cityTextView.text.toString())
             intent.putExtra("gender", genderTextView.text.toString())
             startActivity(intent)
+        }
+
+        // Listener para el icono de flecha
+        backIcon.setOnClickListener {
+            val intent = Intent(this, MainScreen::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

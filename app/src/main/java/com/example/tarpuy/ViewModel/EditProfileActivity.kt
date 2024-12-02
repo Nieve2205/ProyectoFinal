@@ -1,9 +1,11 @@
 package com.example.tarpuy.ViewModel
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tarpuy.R
@@ -23,6 +25,7 @@ class EditProfileActivity : AppCompatActivity() {
     private lateinit var cityEditText: EditText
     private lateinit var genderEditText: EditText
     private lateinit var saveChangesButton: Button
+    private lateinit var backIcon: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +43,7 @@ class EditProfileActivity : AppCompatActivity() {
         cityEditText = findViewById(R.id.cityEditText)
         genderEditText = findViewById(R.id.genderEditText)
         saveChangesButton = findViewById(R.id.saveChangesButton)
+        backIcon = findViewById(R.id.back_icon)
 
         // Obtener datos enviados desde ProfileActivity
         usernameEditText.setText(intent.getStringExtra("username"))
@@ -73,6 +77,13 @@ class EditProfileActivity : AppCompatActivity() {
                     .addOnFailureListener { e ->
                         Toast.makeText(this, "Error al guardar cambios: ${e.message}", Toast.LENGTH_SHORT).show()
                     }
+            }
+
+            // Listener para el icono de flecha
+            backIcon.setOnClickListener {
+                val intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
     }

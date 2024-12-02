@@ -14,7 +14,7 @@
         android:elevation="4dp">
 
         <ImageView
-            android:id="@+id/menu_icon"
+            android:id="@+id/back_icon"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
